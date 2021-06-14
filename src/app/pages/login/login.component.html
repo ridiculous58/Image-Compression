@@ -1,0 +1,38 @@
+<div class=" content" style="padding: 12% 29% 340px 34%;">
+    <div class=" row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">       
+                    <div class="row" style="display: flex;justify-content: center;align-items: center;">
+                        <img style="width:200px;border-radius:200px;" src="https://st2.depositphotos.com/1104517/11967/v/950/depositphotos_119675554-stock-illustration-male-avatar-profile-picture-vector.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="loginForm">
+                        <div class="row">
+                            <div class=" col-md-12">
+                                <div class=" form-group">
+                                    <label for="exampleInputEmail1"> Email address </label>
+                                    <input formControlName="email" class=" form-control" placeholder="email@email.com" type="email" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-12">
+                                <div class=" form-group">
+                                    <label> Parola : </label>
+                                    <input formControlName="password" class=" form-control" placeholder="paralo" type="password" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <button (click)="login()" class=" btn btn-fill btn-danger" type="submit">Submit</button>
+                    <a routerLink="/register" class=" btn btn-fill btn-primary" type="submit">Go To Register Page</a>
+                    <a routerLink="/home" class=" btn btn-fill btn-info" type="submit">Go To Home Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
